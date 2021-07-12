@@ -8,4 +8,4 @@ const routes = Router();
 routes.use('/categories', categoriesRoutes);
 routes.use('/specifications', specificationsRoutes);
 
-export default routes;
+export { routes };
