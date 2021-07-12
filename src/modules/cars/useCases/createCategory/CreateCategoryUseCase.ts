@@ -12,7 +12,7 @@ class CreateCategoryUseCase {
     const category = this.categoriesRepository.findByName(name);
 
     if (category) {
-      throw new Error('Categoria já existente!');
+      throw new Error('Category already exists!');
     }
 
     this.categoriesRepository.create({
